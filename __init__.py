@@ -19,7 +19,7 @@ class AutoCropFaces:
                     "step": 1,
                 }),
                 "scale_factor": ("FLOAT", {
-                    "default": 1.5,
+                    "default": 8.5,
                     "min": 0.5,
                     "max": 10,
                     "step": 0.5,

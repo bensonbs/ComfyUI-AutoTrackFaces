@@ -24,7 +24,7 @@ Automatically track faces in video sequences with smooth camera movement effects
 
 * `output_height`: Output video height, 0=auto calculate based on aspect ratio (default: 0, range: 0-8192)
 
-* `scale_factor`: How much padding to add around detected faces (default: 2.0, range: 1.0-10.0)
+* `scale_factor`: How much padding to add around detected faces (default: 8.5, range: 1.0-10.0)
 
 * `shift_factor`: Vertical positioning of face in frame (default: 0.33, range: 0-1). 0=top edge, 0.5=center, 1.0=bottom edge
 
