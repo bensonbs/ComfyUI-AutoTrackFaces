@@ -1,11 +1,12 @@
-# ComfyUI-AutoCropFaces
+# ComfyUI-AutoTrackFaces
 Use RetinaFace to detect and automatically track faces in video sequences with smooth camera movement effects
 
-Forked and modified from [biubug6/Pytorch_Retinaface](https://github.com/biubug6/Pytorch_Retinaface)
+![Auto Track Faces Workflow](images/demo.gif)
 
 ## Custom Node
 
 ### Auto Track Faces (Video)
+
 
 Automatically track faces in video sequences with smooth camera movement effects. This node processes a batch of video frames and creates a cinematic tracking effect that follows the largest face in the scene.
 
@@ -31,8 +32,6 @@ Returns:
 * `tracked_video`: The processed video with smooth face tracking
 * `tracking_info`: Detailed tracking report including statistics and frame-by-frame information
 
-![Auto Track Faces Workflow](images/demo.gif)
-
 **Algorithm Features:**
 - Intelligent keyframe selection for optimal performance
 - Exponential Moving Average (EMA) smoothing with adaptive speed limits
@@ -46,3 +45,6 @@ Returns:
 - The algorithm automatically balances detection accuracy with performance
 - Use reasonable `scale_factor` values (1.5-3.0) for best results
 - For videos with fast-moving subjects, increase `responsiveness` slightly
+
+---
+Forked and modified from [liusida/ComfyUI-AutoCropFaces](https://github.com/liusida/ComfyUI-AutoCropFaces)
