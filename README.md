@@ -26,7 +26,7 @@ Automatically track faces in video sequences with smooth camera movement effects
 
 * `scale_factor`: How much padding to add around detected faces (default: 2.0, range: 1.0-10.0)
 
-* `shift_factor`: Vertical positioning of face in frame (default: 0.45, range: 0-1). 0=top edge, 0.5=center, 1.0=bottom edge
+* `shift_factor`: Vertical positioning of face in frame (default: 0.33, range: 0-1). 0=top edge, 0.5=center, 1.0=bottom edge
 
 Returns:
 * `tracked_video`: The processed video with smooth face tracking
@@ -43,7 +43,7 @@ Returns:
 **Performance Tips:**
 - Higher `detect_interval` values provide significant speed boosts (e.g., 5x faster with interval=5)
 - The algorithm automatically balances detection accuracy with performance
-- Use reasonable `scale_factor` values (1.5-3.0) for best results
+- Use reasonable `scale_factor` values (0.8-0.9) for best results
 - For videos with fast-moving subjects, increase `responsiveness` slightly
 
 ---

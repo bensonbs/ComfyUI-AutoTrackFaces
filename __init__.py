@@ -26,7 +26,7 @@ class AutoCropFaces:
                     "display": "slider"
                 }),
                 "shift_factor": ("FLOAT", {
-                    "default": 0.45,
+                    "default": 0.33,
                     "min": 0,
                     "max": 1,
                     "step": 0.01,
@@ -225,7 +225,7 @@ class AutoTrackFaces:
                     "tooltip": "Output height, 0=auto calculate"
                 }),
                 "scale_factor": ("FLOAT", {
-                    "default": 2.0,
+                    "default": 0.85,
                     "min": 1.0,
                     "max": 10.0,
                     "step": 0.1,
